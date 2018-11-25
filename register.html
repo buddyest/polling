@@ -22,39 +22,40 @@
       </li>
     </ul>
   </nav>
-    <div id="voter-registration" class="modal-content">
-    <h5>Voter Registration</h5>
+<div class="container mt-4" style="z-index: 1;">
+    <h5 class="text-center">Voter Registration</h5>
     <form class="form-group">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12 offset-md-2">
-            <!-- <label for="name" class="col-form-label">Enter Name</label><br> -->
-            <input type="text" class="form-control col-md-4 col-sm-4 d-inline-block" placeholder="Enter Name" name="name"required>
-            <!-- <label for="age" class="col-form-label">Select Age</label><br> -->
-            <input type="number" class="form-control col-md-4 col-sm-4 d-inline-block" placeholder="Enter Age" name="age" min="18" max="25">
-            <select class="form-control col-md-4 col-sm-4 d-inline-block" name="state">
-              <option disabled selected="selected">Select State</option>
-              <option value="one">One</option>
-              <option value="two">Two</option>
-            </select>
-            <select class="form-control col-md-4 col-sm-4 d-inline-block">
-              <option disabled selected="selected">Select Constituency</option>
-              <option value="one">One</option>
-              <option value="two">Two</option>
-            </select><br>
-            <label>Select Gender</label>
-            <input type="radio" name="gender" value="Male" class="custom-radio">Male<br>
-            <input type="radio" name="gender" value="Female" class="custom-radio">Female<br>
-          </div>
-          <div class="col-md-6 offset-md-2 d-in">
-              <button type="submit">Login</button>
-              <button type="button" onclick="document.getElementById('id01').style.display='none'" class="  cancelbtn">Cancel</button>
-          </div>
-        </div>
+      <p class="">Username*.<br>
+        <input type="text" class="form-control" placeholder="Enter Name" name="name"required>
+      </p>
+      <p class="">Age*.<br>
+        <input type="number" class="form-control" placeholder="Enter Age" name="age" min="18" max="25">
+      </p>
+      <p class="">Select State*.
+        <select class="form-control form-control-label" name="state">
+          <option disabled selected="selected">Select State</option>
+          <option value="one">One</option>
+          <option value="two">Two</option>
+        </select>        
+      </p>    
+      <p class="">Select Constituency*.<br>
+        <select class="form-control">
+          <option disabled selected="selected">Select Constituency</option>
+          <option value="one">One</option>
+          <option value="two">Two</option>
+        </select>        
+      </p>
+      <p class="">Select Gender*.<br>
+        <input type="radio" name="gender" value="Male" class="custom-radio d-inline-block">Male<br>
+        <input type="radio" name="gender" value="Female" class="custom-radio d-inline-block">Female<br>
+      </p>
+      <div class="">
+          <button class="btn btn-success w-25" type="submit">Login</button>
+          <button class="btn btn-primary w-25 mt-auto">Clear</button>
       </div>
     </form>
-  </div>
-  <footer class="w3-container w3-center p-2">
+</div>    
+  <footer class="w3-container fixed-bottom w3-center p-2" style="z-index: 0;">
     <div class="w3-half">
         <h6><i class="fa fa-copyright w3-hover-opacity"></i> 2018. All rights reserved.</h6>
     </div>

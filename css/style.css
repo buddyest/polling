@@ -37,7 +37,6 @@ html,body
 /*Login Box Generator*/
 #voter-registration,#normal-login{
     /*visibility: hidden;*/
-    display: none;
 }
 .header-tabs h3{
     color: #fff;
