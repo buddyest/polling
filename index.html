@@ -11,18 +11,17 @@
   <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">Navbar</a>
+    <nav class="navbar navbar-expand fixed-top navbar-dark bg-dark">
+        <a class="navbar-brand font-weight-bold" href="#">Polling</a>
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-                <a class="nav-link" href="#">Registration</a>
+                <a class="nav-link" href="register.html">Registration</a>
           </li>
           <li class="nav-item">
                 <a class="nav-link" data-toggle="modal" data-target="#myModal">Login</a>
           </li>
         </ul>
-    </nav>
-    
+    </nav>    
 <section id="search">
   <div class="container-fluid">
     <div class="row">
@@ -34,15 +33,15 @@
         <select name="Constituency" class="form-control col-md-3 d-inline-block" id="state">
           <option value="One-One">One</option>
           <option value="Two-two">Two</option>
-        </select>
-        <button class="btn btn-primary btn-outline-secondary">Search</button>
+        </select><br>
+        <button class="btn btn-primary font-weight-bold m-4 p-2 w-25 btn-outline-secondary">Search</button>
     </div>
     </div>
   </div>
 </section>
         <div class="container mb-4 mt-5">
           <div class="news-article" class="pb-3 text-center">
-            <input type="text" class="form-control col-md-8" placeholder="Search">
+            <input type="text" class="form-control border-secondary col-md-2" placeholder="Search">
           </div><br>
           <div class="row">
             <div class="col-md-4 text-center p-5 news-blog border-bottom-0">
@@ -87,7 +86,7 @@
 <section id="contact-section">
   <div class="container-fluid text-center">
       <div class="section-header">
-        <h2 class="smt" style="color:#e5af29;"><span>Contact</span></h2>
+        <h2 class="smt"><span>Contact</span></h2>
       </div><br>
     <div class="row">
       <div class="col-md-4 address">
@@ -109,14 +108,14 @@
 </section>
 
 <!-- Copyright Section -->
-<footer class="w3-container w3-black w3-center" style="padding:20px;">
+<footer class="w3-container w3-center p-2">
     <div class="w3-half">
         <h6><i class="fa fa-copyright w3-hover-opacity"></i> 2018. All rights reserved.</h6>
     </div>
     <div class="w3-third">
     </div>
     <div class="w3-half m-padding">
-        <h6>Developed by <a target="_blank" class="no-underline brown" href="https://Buddyest.com" style="color:#e5af29;">Buddyest</a></h6>
+        <h6>Developed by <a target="_blank" class="no-underline brown" href="https://Buddyest.com">Buddyest</a></h6>
     </div>
 </footer>
 
@@ -141,7 +140,8 @@
           </form>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <button type="submit" class="btn btn-secondary" data-dismiss="modal">Login</button>
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
         </div>
       </div>
       

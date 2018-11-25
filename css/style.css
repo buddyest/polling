@@ -1,3 +1,6 @@
+:root {
+    --main-purple-color:#190219;
+}
 html,body
 {
     width: 100%;
@@ -12,7 +15,7 @@ html,body
     cursor: pointer;
 }
 .search-place{
-    background-color:#190219;
+    background-color:var(--main-purple-color);
     height: 50vh;
     padding:10px; 
 }
@@ -47,7 +50,7 @@ html,body
 .news-article{
     position: relative;
     margin-top: 2%;
-    left: 3%;
+    left:-12px;
 }
 .news-article .form-control{
     border-radius: 20px !important;
@@ -69,7 +72,9 @@ html,body
     padding-top: 2rem;
     padding-bottom:  2rem;
 }
-
+#contact-section h2 span{
+    color:var(--main-purple-color);
+}
 .social-links a i{
     font-size: 20px;
     color: #000;
@@ -78,6 +83,16 @@ html,body
 /*Footer*/
 footer{
     background-color: #343a40 !important;
+}
+footer h6 a{
+    color: var(--main-purple-color);
+}
+footer h6 a:hover{
+    text-decoration: none;
+    color: var(--main-purple-color);
+}
+footer h6{
+    color: #fff;
 }
 @media only screen and (max-width: 320px) {
     .news-article{
