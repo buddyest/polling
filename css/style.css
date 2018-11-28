@@ -100,6 +100,9 @@ footer h6{
     .news-blog{
         margin:4%;
     }
+    #candidate-button{
+        margin:1rem;
+    }
 }
 @media only screen and (max-width: 480px) {
     .news-article{
@@ -107,5 +110,8 @@ footer h6{
     }
     .news-blog{
         margin:3%;
+    }
+    #candidate-button{
+        /*margin;*/
     }
 }
