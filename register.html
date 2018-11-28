@@ -22,30 +22,34 @@
       </li>
     </ul>
   </nav>
+<div class="text-center m-4">
+  <button class="btn btn-secondary " id="voter-button">Voter Registration</button>
+  <button class="btn btn-secondary " id="candidate-button">Candidate Registration</button>
+</div>
 <div id="voter-registration" class="container mt-4" style="z-index: 1;">
-    <h5 class="text-center">Voter Registration</h5>
+    <h4 class="text-center">Voter Registration</h4>
     <form class="form-group">
-      <p class="">Username*.<br>
+      <p class=""><span class="font-weight-bold">Name*</span><br>
         <input type="text" class="form-control" placeholder="Enter Name" name="name"required>
       </p>
-      <p class="">Age*.<br>
+      <p class=""><span class="font-weight-bold">Age*</span><br>
         <input type="number" class="form-control" placeholder="Enter Age" name="age" min="18" max="25">
       </p>
-      <p class="">Select State*.
+      <p class=""><span class="font-weight-bold">Select State*</span><br>
         <select class="form-control form-control-label" name="state">
           <option disabled selected="selected">Select State</option>
           <option value="one">One</option>
           <option value="two">Two</option>
         </select>        
       </p>    
-      <p class="">Select Constituency*.<br>
+      <p class=""><span class="font-weight-bold">Select Constituency*</span><br>
         <select class="form-control">
           <option disabled selected="selected">Select Constituency</option>
           <option value="one">One</option>
           <option value="two">Two</option>
         </select>        
       </p>
-      <p class="">Select Gender*.<br>
+      <p class=""><span class="font-weight-bold">Select Gender*</span><br>
         <input type="radio" name="gender" value="Male" class="custom-radio d-inline-block">Male<br>
         <input type="radio" name="gender" value="Female" class="custom-radio d-inline-block">Female<br>
       </p>
@@ -55,7 +59,49 @@
       </div>
     </form>
 </div>
-  <footer class="w3-container fixed-bottom w3-center p-2" style="z-index: 0;">
+<div id="candidate-registration" style="display:none;" class="container mt-4" style="z-index: 1;">
+    <h4 class="text-center">Candidate Registration</h4>
+    <form class="form-group">
+      <p class=""><span class="font-weight-bold">Name*</span><br>
+        <input type="text" class="form-control" placeholder="Enter Name" name="name"required>
+      </p>
+      <p class=""><span class="font-weight-bold">Party Name*</span><br>
+        <input type="text" class="form-control" placeholder="Enter Name" name="name"required>
+      </p>
+      <p class=""><span class="font-weight-bold">Mobile Number*</span><br>
+        <input type="text" class="form-control" placeholder="Enter Name" minlength="10" maxlength="10" name="name"required>
+      </p>
+      <p class=""><span class="font-weight-bold">Age*</span><br>
+        <input type="number" class="form-control" placeholder="Enter Age" name="age" min="18" max="25">
+      </p>
+      <p class=""><span class="font-weight-bold">Select State*</span><br>
+        <select class="form-control form-control-label" name="state">
+          <option disabled selected="selected">Select State</option>
+          <option value="one">One</option>
+          <option value="two">Two</option>
+        </select>        
+      </p>    
+      <p class=""><span class="font-weight-bold">Select Constituency*</span><br>
+        <select class="form-control">
+          <option disabled selected="selected">Select Constituency</option>
+          <option value="one">One</option>
+          <option value="two">Two</option>
+        </select>        
+      </p>
+      <p class=""><span class="font-weight-bold">Select Gender*</span><br>
+        <input type="radio" name="gender" value="Male" class="custom-radio d-inline-block">Male<br>
+        <input type="radio" name="gender" value="Female" class="custom-radio d-inline-block">Female<br>
+      </p>
+      <p class=""><span class="font-weight-bold">Upload your Picture*</span><br>
+        
+      </p>
+      <div class="">
+          <button class="btn btn-success w-25" type="submit">Login</button>
+          <button class="btn btn-primary w-25 mt-auto">Clear</button>
+      </div>
+    </form>
+</div>
+  <!-- <footer class="w3-container fixed-bottom w3-center p-2" style="z-index: 0;">
     <div class="w3-half">
         <h6><i class="fa fa-copyright w3-hover-opacity"></i> 2018. All rights reserved.</h6>
     </div>
@@ -64,7 +110,7 @@
     <div class="w3-half m-padding">
         <h6>Developed by <a target="_blank" class="no-underline brown" href="https://Buddyest.com">Buddyest</a></h6>
     </div>
-  </footer>
+  </footer> -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>

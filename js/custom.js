@@ -8,23 +8,31 @@ window.onclick = function(event) {
     }
 }
 $(document).ready(function() {
-	$('.leader-signup').click(function(e) {
-		$('#leader-sign-up').show(500);
-		$('#voter-registration').hide(500);
-		$('#normal-login').hide(500);
-		e.preventDefault();
+	// $('.leader-signup').click(function(e) {
+	// 	$('#leader-sign-up').show(500);
+	// 	$('#voter-registration').hide(500);
+	// 	$('#normal-login').hide(500);
+	// 	e.preventDefault();
+	// });
+	// $('.voter').click(function(e) {
+	// 	$('#voter-registration').show(500);
+	// 	$('#leader-sign-up').hide(500);
+	// 	$('#normal-login').hide(500);
+	// 	e.preventDefault();
+	// });
+	// $('.login').click(function(e) {
+	// 	$('#normal-login').css('display','block',);
+	// 	$('#normal-login').show(500);
+	// 	$('#voter-registration').hide(500);
+	// 	$('#leader-sign-up').hide(500);
+	// 	e.preventDefault();
+	// });
+	$('#voter-button').click(function(event) {
+		$('#voter-registration').show();
+		$('#candidate-registration').hide();
 	});
-	$('.voter').click(function(e) {
-		$('#voter-registration').show(500);
-		$('#leader-sign-up').hide(500);
-		$('#normal-login').hide(500);
-		e.preventDefault();
-	});
-	$('.login').click(function(e) {
-		$('#normal-login').css('display','block',);
-		$('#normal-login').show(500);
-		$('#voter-registration').hide(500);
-		$('#leader-sign-up').hide(500);
-		e.preventDefault();
+	$('#candidate-button').click(function(event) {
+		$('#voter-registration').hide();
+		$('#candidate-registration').show();
 	});
 });
