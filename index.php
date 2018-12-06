@@ -1,47 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Polling</title>
+  <!--<title>Polling</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="css/animate.css">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">-->
+  <?php
+	include('includes/head.php');
+	?>
 </head>
 <body>
     <nav class="navbar navbar-expand fixed-top navbar-dark bg-dark">
         <a class="navbar-brand font-weight-bold" href="#">Polling</a>
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-                <a class="nav-link" href="register.html">Registration</a>
+                <a class="nav-link" href="register.php">Registration</a>
           </li>
           <li class="nav-item">
                 <a class="nav-link" data-toggle="modal" data-target="#myModal">Login</a>
           </li>
         </ul>
     </nav>    
-<section id="search">
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-md-12 search-place text-center">
-        <select name="State" class="form-control col-md-3 d-inline-block" id="state">
-          <option value="One">Bihar</option>
-          <option value="Two">Jharkhand</option>
-        </select>
-        <select name="Constituency" class="form-control col-md-3 d-inline-block" id="state">
-          <option value="One-One">One</option>
-          <option value="Two-two">Two</option>
-        </select><br>
-        <button class="btn btn-primary font-weight-bold m-4 p-2 w-25 btn-outline-secondary">Search</button>
-    </div>
-    </div>
-  </div>
-</section>
+		<?php
+	include('searchpage.php');
+	?>
         <div class="container mb-4 mt-5">
           <div class="news-article" class="pb-3 text-center">
-            <input type="text" class="form-control border-secondary col-md-2" placeholder="Search">
+            <input type="text" class="form-control border-secondary" placeholder="Search">
           </div><br>
           <div class="row">
             <div class="col-md-4 text-center p-5 news-blog border-bottom-0">
@@ -81,84 +70,48 @@
             </div>
           </div>
         </div>
+        
+        <!-- Footer -->
+<?php
+	include('includes/footer.php');
+	?>
 
-<!-- Footer -->
-<section id="contact-section">
-  <div class="container-fluid text-center">
-      <div class="section-header">
-        <h2 class="smt"><span>Contact</span></h2>
-      </div><br>
-    <div class="row">
-      <div class="col-md-4 address">
-        <h3>Address</h3>
-        <p><i class="fa fa-map-marker"></i>Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum </p>
-      </div>
-      <div class="col-md-4 contact-details">
-        <h3>Contact Details</h3>
-        <p><i class="fa fa-envelope"></i>info@loremipsum.com</p>
-        <p><i class="fa fa-phone"></i>+91-99999 99999</p>
-      </div>
-      <div class="col-md-4 social-links">
-        <h3>Follow Us</h3>
-        <a class="btn-link p-3" href="https://facebook.com"><i class="fa fa-facebook"></i></a>
-        <a class="btn-link p-3" href="https://facebook.com"><i class="fa fa-twitter"></i></a>
-      </div>
-    </div>
-  </div>  
-</section>
 
-<!-- Copyright Section -->
-<footer class="w3-container w3-center p-2">
-    <div class="w3-half">
-        <h6><i class="fa fa-copyright w3-hover-opacity"></i> 2018. All rights reserved.</h6>
-    </div>
-    <div class="w3-third">
-    </div>
-    <div class="w3-half m-padding">
-        <h6>Developed by <a target="_blank" class="no-underline brown" href="https://Buddyest.com">Buddyest</a></h6>
-    </div>
-</footer>
+
 
   <!-- Modal -->
   <div class="container">
   <!-- Modal -->
   <div class="modal mt-5 fade" id="myModal" role="dialog">
     <div class="modal-dialog">
-    
       <!-- Modal content-->
       <div class="modal-content">
-        <div class="modal-header">
+        <div class="modal-header text-center">
           <h4>Login Here</h4>
           <button type="button" class="close" data-dismiss="modal">&times;</button>
         </div>
         <div class="modal-body">
           <form action="register.php">
-            <label>Username</label>
-            <input type="text" class="form-control col-md-6" placeholder="Enter username" name="">
-            <label>Password</label>
-            <input type="text" class="form-control col-md-6" placeholder="Enter password" name="">
+            <input type="text" class="form-control col-md-12" placeholder="Enter username" name=""><br>
+            <input type="text" class="form-control col-md-12" placeholder="Enter password" name="">
           </form>
         </div>
         <div class="modal-footer">
-          <button type="submit" class="btn btn-secondary" data-dismiss="modal">Login</button>
-          <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+          <button type="submit" class="btn btn-secondary w-100" data-dismiss="modal">Login</button>
         </div>
       </div>
-      
     </div>
   </div>
-  
 </div>
 
-
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<?php
+	include('includes/external-scripts.php');
+	?>
+<!---->    <!--<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-    <script>
-      new WOW.init();
-    </script>
-    <script type="text/javascript" src="js/custom.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>-->
 </body>
 </html>

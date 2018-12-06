@@ -14,6 +14,9 @@ html,body
     color:#fff !important;
     cursor: pointer;
 }
+#search button{
+        width: 25%;
+    }
 .search-place{
     background-color:var(--main-purple-color);
     height: 50vh;
@@ -35,8 +38,12 @@ html,body
 }
 
 /*Login Box Generator*/
-#voter-registration,#normal-login{
-    /*visibility: hidden;*/
+#voter-registration,#candidate-registration{
+    background: #fff;
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
+    padding: 3rem;
 }
 .header-tabs h3{
     color: #fff;
@@ -64,12 +71,25 @@ html,body
     border:1px solid #000;
     border-radius: 20px;
 }
+.news-article input[type=text]{
+    padding-left: 2.2rem;
+    background: url('../images/searchicon.png');
+    background-repeat: no-repeat;
+    background-position: 10px 8px;
+    width: 33%;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+.news-article input[type=text]:focus{
+    width: 76%;
+}
 
 /*Contact Section*/
 #contact-section{
     background-color: #DEE4E7;
     padding-top: 2rem;
     padding-bottom:  2rem;
+    margin-top: 6rem;
 }
 #contact-section h2 span{
     color:var(--main-purple-color);
@@ -84,15 +104,20 @@ footer{
     background-color: #343a40 !important;
 }
 footer h6 a{
-    color: var(--main-purple-color);
+    /*color: #fff;*/
 }
 footer h6 a:hover{
     text-decoration: none;
-    color: var(--main-purple-color);
 }
 footer h6{
     color: #fff;
 }
+
+/*Search Page Design*/
+.vote-now-button button{
+    border-radius: 20px;
+}
+
 @media only screen and (max-width: 320px) {
     .news-article{
         left: 0;
@@ -102,6 +127,9 @@ footer h6{
     }
     #candidate-button{
         margin:1rem;
+    }
+    #search button{
+        width: 100%;
     }
 }
 @media only screen and (max-width: 480px) {
@@ -113,5 +141,10 @@ footer h6{
     }
     #candidate-button{
         /*margin;*/
+    }
+    #search button{
+        width: 80%;
+        /*margin: auto;*/
+        /*margin-right: 1rem;*/
     }
 }
